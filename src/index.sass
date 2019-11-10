@@ -1,0 +1,13 @@
+@mixin circle($r,$borderWidth)
+  width: $r
+  height: $r
+  border-radius: $borderWidth + $r/2
+
+.circle
+  background-color: yellow
+  //border: solid 1px #000
+  +circle(100px,1px)
+.square
+  background-color: blue
+  width: 100px
+  height: 100px
